@@ -38,3 +38,9 @@
 
 [init]
 	defaultBranch = main
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[user]
+	signingkey = 64A084261EC39E451D150C2722FA9B3FADE80C26
+[commit]
+	gpgsign = true
