@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# Copy the current branch name to the clipboard.
+
+
+# Follow: https://developer.1password.com/docs/ssh/git-commit-signing
+
+op signin
+
+if ! gh auth status &> /dev/null; then
+  gh auth login -h GitHub.com -p HTTPS -s admin:ssh_signing_key -w
+  # gh auth refresh -h github.com -s admin:ssh_signing_key
+fi
+
+
+# op ssh generate --title "MBP: GitHub"
+
+op item list
+
+echo "What's the ID of the SSH Key you'd like to use?"
+read -e itemid
+
+# op item get "${itemid}"47q7b7nywbczowf6y5uu2hg22i --fields="public key"
+git_authorsigningkey=$(op item get "${itemid}" --fields="public key")
+# git_authorsigningprivatekey=$(op item get "${itemid}" --fields="private key")
+
+# echo "${git_authorsigningkey}"
+# echo "${git_authorsigningprivatekey}"
+
+file="${itemid}.pub"
+
+echo "${git_authorsigningkey}" | tee $file
+
+echo "What's would you like to title this SSH key?"
+read -e title
+
+gh ssh-key add $file -t "${title} (${itemid})" --type signing
+
+rm $file
+
+
