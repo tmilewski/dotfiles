@@ -1,0 +1,71 @@
+# PREREQUISITES:
+# Run Docker Desktop at least once
+
+ROOT=$PROJECTS/clerk_docker
+SUBMODULES=(accounts javascript clerk_go dashboard)
+
+run() {
+  local cmd=$1
+  local subdir=${2:-""}
+
+  (cd $ROOT/$subdir && $cmd)
+}
+
+run_submodules() {
+  local cmd=$1
+
+  for dir in "${SUBMODULES[@]}"
+  do
+    run "$cmd" "$dir"
+  done
+}
+
+title() {
+  echo "\n\n>> $1 <<\n\n"
+}
+
+###########################################
+# Clone & Update Repositories
+###########################################
+
+title "Cloning clerk_docker to $ROOT"
+git clone --recurse-submodules https://github.com/clerkinc/clerk_docker.git $ROOT
+
+title "Checking out main branch for all submodules"
+run_submodules "git checkout main"
+
+###########################################
+# Installing Dependencies
+###########################################
+
+title "Installing Node 16"
+run "n 18"
+
+title "Installing Go Dependencies "
+run "make deps" "clerk_go"
+
+title "Installing Node Dependencies"
+run_submodules "npm i"
+
+###########################################
+# Database Migrations
+###########################################
+
+title "Running clerk_go"
+echo "In another terminal, run: \`cd $ROOT/clerk_go && make up/db/dev\`"
+read -p "Once that command is successfully running, press any key to continue..."
+
+title "Running Database Migrations"
+run "make db/migrate/dev" "clerk_go" 
+
+###########################################
+# Completion
+###########################################
+
+title "Setup Complete!"
+echo "You're ready to start developing!"
+echo ""
+echo "In the \`clerk_go\` folder run \`make up\` to start the frontend and backend services. Alternativately, you may find it useful to run the services in separate terminals with \`make up/fe\` and \`make up/be\`"
+echo ""
+echo "Wait until everything is up."
+echo "When done you should be live at https://dashboard.prod.lclclerk.com. Use the Sign up link to create your first user and application."

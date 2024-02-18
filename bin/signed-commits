@@ -20,12 +20,7 @@ op item list
 echo "What's the ID of the SSH Key you'd like to use?"
 read -e itemid
 
-# op item get "${itemid}"47q7b7nywbczowf6y5uu2hg22i --fields="public key"
 git_authorsigningkey=$(op item get "${itemid}" --fields="public key")
-# git_authorsigningprivatekey=$(op item get "${itemid}" --fields="private key")
-
-# echo "${git_authorsigningkey}"
-# echo "${git_authorsigningprivatekey}"
 
 file="${itemid}.pub"
 

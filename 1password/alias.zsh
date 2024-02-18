@@ -1,1 +1,1 @@
-export 1pw=op
+alias 1pw=op
