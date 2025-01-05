@@ -1,7 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap 'homebrew/bundle'
-
 tap "homebrew/bundle"
 tap "oven-sh/bun"
 tap "hashicorp/tap"
@@ -27,7 +25,7 @@ brew "mkcert" # Tool to generate trusted certificates
 brew "n" # Node version management
 brew "neonctl" # CLI for Neon
 brew "node" # Platform built on V8 to build network applications
-# brew "openjdk" # Development kit for the Java programming language
+brew "openjdk" # Development kit for the Java programming language
 brew "pinentry-mac" # Pinentry for GPG on Mac
 brew "python-setuptools" # Python setup tools
 brew "rbenv" # Ruby version manager
@@ -41,6 +39,7 @@ brew "yt-dlp" # Fork of youtube-dl with additional features and fixes
 
 cask "1password" # Password manager that keeps all passwords secure behind one password
 cask "1password-cli" # Command-line helper for the 1Password password manager
+cask "cursor" # Code editor
 cask "arc" # Chromium based browser
 cask "discord" # Voice and text chat software
 cask "docker" # App to build and share containerized applications and microservices
