@@ -1,0 +1,1 @@
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
