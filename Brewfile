@@ -1,3 +1,7 @@
+cask_args appdir: '/Applications'
+
+tap 'homebrew/bundle'
+
 tap "homebrew/bundle"
 tap "oven-sh/bun"
 tap "hashicorp/tap"
@@ -65,5 +69,3 @@ cask "zen-browser" # Browser with built-in privacy features
 mas "1Password for Safari", id: 1569813296
 # mas "Slack for Desktop", id: 803453959
 mas "Xcode", id: 497799835
-
-# vscode "GitHub.codespaces"
