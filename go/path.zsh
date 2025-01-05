@@ -1,4 +1,5 @@
-# export GOROOT="$(brew --prefix go@1.19)"
-export GOPATH="$(brew --prefix go@1.21)"
-export GOROOT="$(brew --prefix go@1.21)/libexec"
+# export GOPATH="$(brew --prefix go@1.21)"
+
+export GOPATH="/opt/homebrew/opt/go@1.21"
+export GOROOT="$GOPATH/libexec"
 export PATH="$GOPATH/bin:$PATH"
