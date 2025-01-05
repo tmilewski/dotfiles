@@ -55,7 +55,6 @@ cask "imageoptim" # Tool to optimize images to a smaller size
 cask "krisp" # Noise cancelling application
 cask "linear-linear" # App to manage software development and track bugs
 cask "logi-options+" # Software for Logitech devices
-cask "logitech-g-hub" # Software for Logitech devices
 cask "opal-composer" # Professional webcam software for the Opal C1
 cask "raycast" # Control your tools with a few keystrokes
 cask "rectangle-pro" # Window snapping tool
