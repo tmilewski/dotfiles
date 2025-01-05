@@ -52,7 +52,6 @@ $ZSH/macos/set-hostname.sh
 
 # Install homebrew + dependencies
 $ZSH/homebrew/install.sh 2>&1
-$ZSH/homebrew/install-dependencies.sh 2>&1
 
 echo "› brew upgrade"
 brew upgrade
