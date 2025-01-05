@@ -5,7 +5,7 @@ export ZSH=$HOME/.dotfiles
 export PROJECTS=~/Code
 
 # add homebrew to path before everything else
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
