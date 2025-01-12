@@ -27,6 +27,7 @@ brew "neonctl" # CLI for Neon
 brew "node" # Platform built on V8 to build network applications
 brew "openjdk" # Development kit for the Java programming language
 brew "pinentry-mac" # Pinentry for GPG on Mac
+brew "pnpm" # Fast, disk space efficient package manager
 brew "python-setuptools" # Python setup tools
 brew "rbenv" # Ruby version manager
 brew "svgo" # Nodejs-based tool for optimizing SVG vector graphics files
