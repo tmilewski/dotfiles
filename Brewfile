@@ -13,7 +13,7 @@ brew "gh" # GitHub command-line tool
 brew "git" # Distributed revision control system
 brew "github-keygen" # Bootstrap GitHub SSH configuration
 brew "gnupg" # GNU Pretty Good Privacy (PGP) package
-# brew "go@1.19" # Open source programming language to build simple/reliable/efficient software
+brew "go" # Open source programming language to build simple/reliable/efficient software
 brew "graphviz" # Graph visualization software from AT&T and Bell Labs
 brew "gradle" # Build system for multiple languages and environments
 brew "hub" # Add GitHub support to git on the command-line
@@ -40,7 +40,7 @@ brew "yt-dlp" # Fork of youtube-dl with additional features and fixes
 
 cask "1password" # Password manager that keeps all passwords secure behind one password
 cask "1password-cli" # Command-line helper for the 1Password password manager
-cask "cursor" # Code editor
+# cask "cursor" # Code editor
 cask "arc" # Chromium based browser
 cask "discord" # Voice and text chat software
 cask "docker" # App to build and share containerized applications and microservices
