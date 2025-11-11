@@ -7,8 +7,8 @@ case ":$PATH:" in
   *) export PATH="$BUN_BIN:$PATH" ;;
 esac
 
-export PNPM_HOME=$HOME/Library/pnpm
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# export PNPM_HOME=$HOME/Library/pnpm
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac

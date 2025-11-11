@@ -1,3 +1,8 @@
-export GOPATH="/opt/homebrew/Cellar/go/1.24.1"
-export GOROOT="$GOPATH/libexec"
-export PATH="$GOPATH/bin:$PATH"
+prefix="$(brew --prefix golang)"
+
+export GOPATH=$prefix
+export GOROOT="$prefix/libexec"
+export PATH="$prefix/bin:$PATH"
+
+
+
