@@ -1,6 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap "homebrew/bundle"
 tap "oven-sh/bun"
 tap "hashicorp/tap"
 
@@ -14,22 +13,22 @@ brew "git" # Distributed revision control system
 brew "git-lfs" # Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server.
 brew "github-keygen" # Bootstrap GitHub SSH configuration
 brew "gnupg" # GNU Pretty Good Privacy (PGP) package
-brew "go" # Open source programming language to build simple/reliable/efficient software
+brew "go@1.25" # Open source programming language to build simple/reliable/efficient software (version 1.25.4)
 brew "graphviz" # Graph visualization software from AT&T and Bell Labs
 brew "gradle" # Build system for multiple languages and environments
 brew "hub" # Add GitHub support to git on the command-line
 brew "java" # Development kit for the Java programming language
 brew "libpq" # PostgreSQL C client library
 brew "mas" # Mac App Store command-line interface
-# brew "maven" # Java-based project management
+brew "maven" # Java-based project management
 brew "mkcert" # Tool to generate trusted certificates
 brew "n" # Node version management
 brew "neonctl" # CLI for Neon
 brew "node" # Platform built on V8 to build network applications
-# brew "openjdk" # Development kit for the Java programming language
+brew "openjdk" # Development kit for the Java programming language
 brew "pinentry-mac" # Pinentry for GPG on Mac
 brew "pnpm" # Fast, disk space efficient package manager
-# brew "python-setuptools" # Python setup tools
+brew "python-setuptools" # Python setup tools
 brew "rbenv" # Ruby version manager
 brew "svgo" # Nodejs-based tool for optimizing SVG vector graphics files
 brew "sops" # Command-line tool for managing secrets
@@ -47,28 +46,30 @@ cask "arc" # Chromium based browser
 cask "bruno" # Bruno is a Git-integrated, fully offline, and open-source API client
 cask "coderabbit" # Coderabbit AI CLI
 cask "discord" # Voice and text chat software
-cask "docker" # App to build and share containerized applications and microservices
+cask "docker-desktop" # App to build and share containerized applications and microservices
 cask "elgato-control-center" # Control your Elgato key lights
 # cask "elgato-stream-deck" # Assign keys, and then decorate and label them
 cask "firefox" # Web browser
 cask "github" # Github Desktop
 # cask "goland" # Go (golang) IDE
 cask "google-chrome" # Web browser
-# cask "google-cloud-sdk" # Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli" # Set of tools to manage resources and applications hosted on Google Cloud
 cask "grammarly-desktop" # Writing assistant
 cask "imageoptim" # Tool to optimize images to a smaller size
 cask "krisp" # Noise cancelling application
 cask "linear-linear" # App to manage software development and track bugs
 cask "logi-options+" # Software for Logitech devices
+cask "nook" # Minimal browser with a sidebar-first design
 cask "opal-composer" # Professional webcam software for the Opal C1
+cask "postico" # PostgreSQL client
 # cask "raycast" # Control your tools with a few keystrokes
 cask "rectangle-pro" # Window snapping tool
 cask "tableplus" # Native GUI tool for relational databases
 cask "tunnelbear" # VPN service
 cask "visual-studio-code" # Open-source code editor
 # cask "zed" # Text and code editor
-cask "zen-browser" # Browser with built-in privacy features
+cask "zen" # Browser with built-in privacy features
 
 # mas "1Password for Safari", id: 1569813296
 # mas "Slack for Desktop", id: 803453959
-mas "Xcode", id: 497799835
+# mas "Xcode", id: 497799835

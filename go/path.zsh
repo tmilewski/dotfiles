@@ -1,8 +1,7 @@
-prefix="$(brew --prefix golang)"
+export PATH="$PATH:$(go env GOPATH)/bin"
 
-export GOPATH=$prefix
-export GOROOT="$prefix/libexec"
-export PATH="$prefix/bin:$PATH"
+# prefix="$(brew --prefix golang)"
 
-
-
+# export GOPATH=$prefix
+# export GOROOT="$prefix/libexec"
+# export PATH="$prefix/bin:$PATH"

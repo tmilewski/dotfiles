@@ -31,23 +31,25 @@
   #
   # Setting to git 2.0 default to suppress warning message
   default = simple
-# [credential]
-#   helper = osxkeychain
+[credential]
+	helper = osxkeychain
+	helper = !gh auth git-credential
 [diff "spaceman-diff"]
   command = /opt/homebrew/bin/spaceman-diff
 [init]
 	defaultBranch = main
 [gpg]
-  format = ssh
+	format = ssh
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [commit]
   gpgsign = true
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
 [user]
-	name = Tom Milewski
-	email = me@tm.codes
+  name = Tom Milewski
+  email = me@tm.codes
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbTAMkq5uIf8HzrfS/AHYAWg6WHMqvWlt+FQqdjWMNE
