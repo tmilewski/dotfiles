@@ -1,3 +1,4 @@
 Brewfile.lock.json
 git/gitconfig.local.symlink
 turbo/env.zsh
+.claude/settings.local.json
