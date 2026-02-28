@@ -5,6 +5,7 @@ tap "hashicorp/tap"
 
 # brew "act" # Run your GitHub Actions locally
 brew "bun" # Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+brew "bat" # Cat clone with syntax highlighting
 brew "caddy" # Fast, cross-platform HTTP/2 web server with automatic HTTPS
 brew "coreutils" # GNU File, Shell, and Text utilities
 brew "ffmpeg"
@@ -13,10 +14,13 @@ brew "git" # Distributed revision control system
 brew "git-lfs" # Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server.
 brew "github-keygen" # Bootstrap GitHub SSH configuration
 brew "gnupg" # GNU Pretty Good Privacy (PGP) package
+brew "eza" # Modern replacement for ls
+brew "fd" # Simple, fast alternative to find
+brew "fzf" # Fuzzy finder for the terminal
 brew "go@1.25" # Open source programming language to build simple/reliable/efficient software (version 1.25.4)
 brew "graphviz" # Graph visualization software from AT&T and Bell Labs
 brew "gradle" # Build system for multiple languages and environments
-brew "hub" # Add GitHub support to git on the command-line
+# brew "hub" # Deprecated — use `gh` instead
 brew "java" # Development kit for the Java programming language
 brew "libpq" # PostgreSQL C client library
 brew "mas" # Mac App Store command-line interface
@@ -30,20 +34,25 @@ brew "pinentry-mac" # Pinentry for GPG on Mac
 brew "pnpm" # Fast, disk space efficient package manager
 brew "python-setuptools" # Python setup tools
 brew "rbenv" # Ruby version manager
+brew "ripgrep" # Fast grep alternative
 brew "svgo" # Nodejs-based tool for optimizing SVG vector graphics files
 brew "sops" # Command-line tool for managing secrets
+brew "starship" # Cross-shell prompt
 brew "terraform" # Tool for building, changing, and versioning infrastructure
 brew "vips" # Image processing library
 brew "wget" # Internet file retriever
 brew "x265" # H.265/HEVC video encoder
 brew "yarn" # JavaScript package manager
 brew "yt-dlp" # Fork of youtube-dl with additional features and fixes
+brew "zoxide" # Smarter cd command
+
 
 cask "1password" # Password manager that keeps all passwords secure behind one password
 cask "1password-cli" # Command-line helper for the 1Password password manager
 # cask "cursor" # Code editor
 cask "arc" # Chromium based browser
 cask "bruno" # Bruno is a Git-integrated, fully offline, and open-source API client
+cask "claude-code" # Claude Code Extension for VS Code
 cask "coderabbit" # Coderabbit AI CLI
 cask "discord" # Voice and text chat software
 cask "docker-desktop" # App to build and share containerized applications and microservices
@@ -51,6 +60,7 @@ cask "elgato-control-center" # Control your Elgato key lights
 # cask "elgato-stream-deck" # Assign keys, and then decorate and label them
 cask "firefox" # Web browser
 cask "github" # Github Desktop
+cask "ghostty" # Ghostty is a modern, open-source, and fully offline podcast client.
 # cask "goland" # Go (golang) IDE
 cask "google-chrome" # Web browser
 cask "gcloud-cli" # Set of tools to manage resources and applications hosted on Google Cloud
