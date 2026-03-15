@@ -52,6 +52,7 @@ cask "1password-cli" # Command-line helper for the 1Password password manager
 # cask "cursor" # Code editor
 cask "arc" # Chromium based browser
 cask "bruno" # Bruno is a Git-integrated, fully offline, and open-source API client
+cask "caffeine" # Caffeine is a small application that helps you to prevent your Mac from going to sleep.
 cask "claude-code" # Claude Code Extension for VS Code
 cask "coderabbit" # Coderabbit AI CLI
 cask "discord" # Voice and text chat software
