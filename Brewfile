@@ -7,6 +7,7 @@ tap "hashicorp/tap"
 brew "bun" # Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 brew "bat" # Cat clone with syntax highlighting
 brew "caddy" # Fast, cross-platform HTTP/2 web server with automatic HTTPS
+brew "ccache" # Compiler cache
 brew "coreutils" # GNU File, Shell, and Text utilities
 brew "ffmpeg"
 brew "gh" # GitHub command-line tool
@@ -71,6 +72,7 @@ cask "krisp" # Noise cancelling application
 cask "linear-linear" # App to manage software development and track bugs
 cask "logi-options+" # Software for Logitech devices
 cask "nook" # Minimal browser with a sidebar-first design
+cask "obsidian" # Obsidian is a powerful knowledge base that works on top of a local folder of plain text Markdown files.
 cask "opal-composer" # Professional webcam software for the Opal C1
 cask "postico" # PostgreSQL client
 # cask "raycast" # Control your tools with a few keystrokes
