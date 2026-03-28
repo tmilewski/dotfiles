@@ -16,6 +16,7 @@ brew "git-lfs" # Git Large File Storage (LFS) replaces large files such as audio
 brew "github-keygen" # Bootstrap GitHub SSH configuration
 brew "gnupg" # GNU Pretty Good Privacy (PGP) package
 brew "eza" # Modern replacement for ls
+brew "fastlane"
 brew "fd" # Simple, fast alternative to find
 brew "fzf" # Fuzzy finder for the terminal
 brew "go@1.25" # Open source programming language to build simple/reliable/efficient software (version 1.25.4)
